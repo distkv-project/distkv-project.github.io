@@ -9,13 +9,25 @@ export default {
     events: {
       title: '事件 & 新闻',
         list: [
-
+          {
+            img: '/images/distkv_logo.png',
+            title: '',
+            content: '',
+            dateStr: '',
+            link: '',
+          },
       ]
     },
     contacts: {
       title: '联系我们',
       desc: '有问题需要反馈？请通过一下方式联系我们。',
       list: [
+        {
+          img: '/images/channels/mailinglist.png',
+          imgHover: '/images/channels/mailinglist_hover.png',
+          title: 'Mailing List',
+          link: 'mailto:kingchin1218@gmail.com'
+        },
       ],
     },
     contributorGuide: {
