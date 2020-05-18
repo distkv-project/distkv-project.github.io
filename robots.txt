@@ -1,0 +1,11 @@
+# docsite robots.txt
+User-agent: *
+Allow: /
+Allow: /en-us/
+Allow: /zh-cn/
+Allow: /build/
+Allow: /md_json/
+Allow: /site_config/
+Allow: /images/
+
+Sitemap: https://distkc.com/sitemap.xml

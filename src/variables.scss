@@ -1,0 +1,37 @@
+@import './colors';
+@import './breakpoints';
+@import './typography';
+
+// 头部高度
+$headerHeight: 66px;
+// 侧边栏宽度
+$sideMenuWidth: 295px;
+// bar高度
+$barHeight: 200px;
+// 切换到移动端显示屏宽界限
+$mobileWidth: 640px;
+// 页面主体最大宽度
+$contentWidth: 1280px;
+
+%absolute-h-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+%absolute-v-middle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+%absolute-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}

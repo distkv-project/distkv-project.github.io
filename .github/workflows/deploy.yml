@@ -1,0 +1,31 @@
+name: distkv.github.io deploy
+
+on:
+  push:
+    branches:
+    - dev
+
+jobs:
+  Build-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+    - name: Build
+      run: |
+        npm install
+        npm run build
+        node sitemap-generator.js
+        mkdir deploy-dist
+        cp -R zh-cn/ en-us/  build/ images/ md_json/ site_config/ lib/ deploy-dist/
+        mv .htaccess *.html deploy-dist/
+        mv sitemap.xml robots.txt deploy-dist/
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_branch: master
+        publish_dir: ./deploy-dist
+        keep_files: true
