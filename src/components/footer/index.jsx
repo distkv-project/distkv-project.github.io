@@ -52,36 +52,6 @@ class Footer extends Language {
                 }
               </dl>
             </div>
-            <div className="col col-4">
-              <dl>
-                <dt>{dataProject.barText}</dt>
-                {
-                  dataProject.projects.list.map((d, i) => (
-                    <dd key={i}><a href={getLink(d.link)} target={d.target || '_self'}>{d.title}</a></dd>
-                  ))
-                }
-              </dl>
-            </div>
-            <div className="col col-3">
-              <dl>
-                <dt>{dataSource.sponsors.title}</dt>
-                {
-                  dataSource.sponsors.list.map((d, i) => (
-                    <dd key={i}><a href={getLink(d.link)} target={d.target || '_self'}>{d.text}</a></dd>
-                  ))
-                }
-              </dl>
-            </div>
-            <div className="col col-3">
-              <dl>
-                <dt>{dataSource.friendlyLink.title}</dt>
-                {
-                  dataSource.friendlyLink.list.map((d, i) => (
-                    <dd key={i}><a href={getLink(d.link)} target={d.target || '_self'}>{d.text}</a></dd>
-                  ))
-                }
-              </dl>
-            </div>
             <div className="col col-3">
               <h3>{dataSource.statistics.title}</h3>
               <p><span id="busuanzi_container_page_pv">{dataSource.statistics.page_pv}<span id="busuanzi_value_page_pv"></span></span></p>
