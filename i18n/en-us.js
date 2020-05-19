@@ -50,7 +50,7 @@ export default {
           img: '/images/documents.png',
           title: 'Documentation',
           content: 'Improve the documentation',
-          link: "https://github.com/distkv-project/distkv.github.io"
+          link: "https://github.com/distkv-project/distkv-project.github.io"
         },
         {
           img: '/images/pullrequest.png',
@@ -185,11 +185,11 @@ export default {
         },
         {
           text: 'Report a doc issue',
-          link: 'https://github.com/distkv-project/distkv.github.io/issues/new',
+          link: 'https://github.com/distkv-project/distkv-project.github.io/issues/new',
         },
         {
           text: 'Edit This Page on GitHub',
-          link: 'https://github.com/distkv-project/distkv.github.io',
+          link: 'https://github.com/distkv-project/distkv-project.github.io',
         }
       ],
     },

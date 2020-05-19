@@ -2,7 +2,7 @@
 export default {
   rootPath: '',
   port: 8080,
-  domain: 'distkv.github.io', // 站点部署域名，无需协议和path等
+  domain: 'distkv-project.github.io', // 站点部署域名，无需协议和path等
   // defaultSearch: 'baidu', // 默认搜索引擎，baidu或者google
   langList: [
     { value: 'zh-cn', text: '简体中文' },

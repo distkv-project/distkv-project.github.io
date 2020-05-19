@@ -1,4 +1,4 @@
-name: distkv.github.io deploy
+name: distkv-project.github.io deploy
 
 on:
   push:

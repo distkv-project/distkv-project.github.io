@@ -1,6 +1,6 @@
 # Distkv Community Official Website
 
-![CI](https://github.com/distkv-project/distkv.github.io/workflows/CI/badge.svg)
+![CI](https://github.com/distkv-project/distkv-project.github.io/workflows/CI/badge.svg)
 ![distkv-project.github.io deploy](https://github.com/distkv-project/distkv-project.github.io/workflows/distkv-project.github.io%20deploy/badge.svg)
 
 All website material  of https://distkv.com

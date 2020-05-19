@@ -50,7 +50,7 @@ export default {
           img: '/images/documents.png',
           title: '改进文档',
           content: '改进文档',
-          link: "https://github.com/distkv-project/distkv.github.io"
+          link: "https://github.com/distkv-project/distkv-project.github.io"
         },
         {
           img: '/images/pullrequest.png',
@@ -183,11 +183,11 @@ export default {
         },
         {
           text: '报告文档问题',
-          link: 'https://github.com/distkv-project/distkv.github.io/issues/new',
+          link: 'https://github.com/distkv-project/distkv-project.github.io/issues/new',
         },
         {
           text: '在Github上编辑此文档',
-          link: 'https://github.com/distkv-project/distkv.github.io',
+          link: 'https://github.com/distkv-project/distkv-project.github.io',
         }
       ],
     },
