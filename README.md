@@ -1,4 +1,4 @@
-# Wuhan2020 Community Official Website
+# Distkv Community Official Website
 
 ![CI](https://github.com/distkv-project/distkv.github.io/workflows/CI/badge.svg)
 ![distkv.github.io deploy](https://github.com/distkv-project/distkv.github.io/workflows/distkv.github.io%20deploy/badge.svg)
