@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="keywords" content="command_guide" />
+  <meta name="description" content="command_guide" />
+  <meta name="baidu-site-verification" content="" />
+  <meta name="google-site-verification" content="" />
+
+  <!-- 网页标签标题 -->
+  <title>command_guide</title>
+  <link rel="shortcut icon" href="/images/distkv_logo.png" />
+  <link rel="stylesheet" href="/build/documentation.css" />
+</head>
+
+<body>
+  <div id="root"><div class="documentation-page" data-reactroot=""><div class="header-container normal"><div class="logo-container"><a href="/en-us/index.html"><img class="logo-image" src="/images/distkv-logo.png"/></a></div><div class="header-menu-container"><img class="header-menu-toggle" src="/images/system/menu_gray.png"/><ul class="menu-list "><li class="menu-item"><a class="normal " href="/en-us/index.html" target="_self">HOME</a></li><li class="menu-item"><a class="normal active" href="/en-us/docs/overview/what-is-distkv.html" target="_self">DOCS</a></li><li class="menu-item"><a class="normal " href="/en-us/docs/developers/developers_dev.html" target="_self">CONTRIBUTORS</a></li><li class="menu-item"><a class="normal " href="/en-us/blog/index.html" target="_self">BLOG</a></li><li class="menu-item"><a class="normal " href="/en-us/community/index.html" target="_self">COMMUNITY</a></li></ul></div><div class="language-list-container"><div class="ant-select-sm switch-lang ant-select ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-controls="" aria-expanded="false" tabindex="0"><div class="ant-select-selection__rendered"><div class="ant-select-selection-selected-value" title="English" style="display:block;opacity:1">English</div></div><span class="ant-select-arrow" style="user-select:none;-webkit-user-select:none" unselectable="on"><i aria-label="icon: down" class="anticon anticon-down ant-select-arrow-icon"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></i></span></div></div></div></div><div class="bar"><div class="bar-body"><img src="https://img.alicdn.com/tfs/TB1cm8nJwDqK1RjSZSyXXaxEVXa-160-160.png" class="front-img"/><span>Documentation</span><img src="https://img.alicdn.com/tfs/TB1cm8nJwDqK1RjSZSyXXaxEVXa-160-160.png" class="back-img"/></div></div><section class="content-section"><div class="sidemenu"><div class="sidemenu-toggle"><img src="https://img.alicdn.com/tfs/TB1E6apXHGYBuNjy0FoXXciBFXa-200-200.png"/></div><ul><li class="menu-item menu-item-level-1"><span>Overview</span><ul><li style="height:36px;overflow:hidden" class="menu-item menu-item-level-2"><a href="/en-us/docs/overview/what-is-distkv.html" target="_self">What is Distkv?</a></li><li style="height:36px;overflow:hidden" class="menu-item menu-item-level-2"><a href="/en-us/docs/overview/faq.html" target="_self">FAQ</a></li></ul></li><li class="menu-item menu-item-level-1"><span>User Doc</span><ul></ul></li><li class="menu-item menu-item-level-1"><span>Developer Guide</span><ul></ul></li></ul></div><div class="doc-content markdown-body"><h2>Introduction</h2>
+<p>Distkv is a type-oriented database system. There are several concepts in Distkv that looks like the basic collections.
+We have 6 concepts <code>string</code>, <code>list</code>, <code>set</code>, <code>dict</code>, <code>sortedlist</code> and <code>table</code> yet.</p>
+<p>In this section, you will learn the grammer of these basic concepts in Distkv, and will learn how to use these concepts as examples as well.</p>
+<h2>1. String Concept</h2>
+<p>Put a string value into Distkv store.</p>
+<pre><code class="language-bash">str.put key value
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">$ dkv-cli &gt; str.put k1 v1
+$ dkv-cli &gt; ok
+</code></pre>
+<p>Get a string value from Distkv store.</p>
+<pre><code class="language-bash">str.get key
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; str.get k1
+dkv-cli &gt; v1
+</code></pre>
+<p>Drop a string value from Distkv store.</p>
+<pre><code class="language-bash">str.drop key
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; str.drop k1
+dkv-cli &gt; ok
+
+dkv-cli &gt; str.get k1
+dkv-cli &gt; errorCode: A100;
+ Detail: The key k1 is not found <span class="hljs-keyword">in</span> the store.
+</code></pre>
+<h2>2. List Concept</h2>
+<p>Put a list into Distkv store.</p>
+<pre><code class="language-bash">list.put key value1 [value2 [value3 [...]]]
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; list.put k1 v1 v2 v3
+dkv-cli &gt; ok
+</code></pre>
+<p>Get a list from Distkv store.</p>
+<pre><code class="language-bash">list.get key
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; list.get k1
+dkv-cli &gt; [v1, v2, v3]
+</code></pre>
+<p>Get a range of items of the list from Distkv store.</p>
+<pre><code class="language-bash"><span class="hljs-comment"># Note that it's excluding the `end_index`.</span>
+list.get key from_index end_index
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; list.get k1 0 2
+dkv-cli &gt; [v1, v2]
+</code></pre>
+<p>Get one item of the list from Distkv store.</p>
+<pre><code class="language-bash">list.get key index
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; list.get k1 1
+dkv-cli &gt; v1
+</code></pre>
+<p>Put items into the front of the list.</p>
+<pre><code class="language-bash">list.lput key value1 [value2 [value3 [...]]]
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; list.lput <span class="hljs-string">"k1"</span> <span class="hljs-string">"v4"</span> <span class="hljs-string">"v5"</span> <span class="hljs-string">"v6"</span>
+dkv-cli &gt; ok
+</code></pre>
+<p>Put items into the back of the list.</p>
+<pre><code class="language-bash">list.rput key value1 [value2 [value3 [...]]]
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; list.rput <span class="hljs-string">"k1"</span> <span class="hljs-string">"v7"</span>
+dkv-cli &gt; ok
+</code></pre>
+<p>Remove item from the list with the given index.</p>
+<pre><code class="language-bash">list.ldel key index
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; list.ldel <span class="hljs-string">"k1"</span> 2
+dkv-cli &gt; ok
+</code></pre>
+<p>Remove item from the back of the list with the given back index.</p>
+<pre><code class="language-bash">list.rdel key back_index
+</code></pre>
+<p>If the list is [1, 2, 3] and the given number is 0, item <code>3</code> will be removed.</p>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; list.rdel <span class="hljs-string">"k1"</span> 2
+dkv-cli &gt; ok
+</code></pre>
+<p>Get the list from Distkv store.</p>
+<pre><code class="language-bash">list.get key
+</code></pre>
+<p>example:</p>
+<pre><code class="language-bash">dkv-cli &gt; list.get <span class="hljs-string">"k1"</span>
+dkv-cli &gt; [<span class="hljs-string">"v6"</span>, <span class="hljs-string">"v1"</span>, <span class="hljs-string">"v2"</span>]
+</code></pre>
+<h2>3. Set concept</h2>
+<pre><code class="language-bash">dkv-cli &gt; set.put <span class="hljs-string">"k1"</span> <span class="hljs-string">"v1"</span> <span class="hljs-string">"v2"</span> <span class="hljs-string">"v3"</span>
+dkv-cli &gt; ok
+
+dkv-cli &gt; set.get <span class="hljs-string">"k1"</span>
+dkv-cli &gt; {<span class="hljs-string">"v1"</span>, <span class="hljs-string">"v2"</span>, <span class="hljs-string">"v3"</span>}
+
+dkv-cli &gt; set.del <span class="hljs-string">"k1"</span> <span class="hljs-string">"v1"</span>
+dkv-cli &gt; ok
+
+dkv-cli &gt; set.get <span class="hljs-string">"k1"</span>
+dkv-cli &gt; {<span class="hljs-string">"v2"</span>, <span class="hljs-string">"v3"</span>}
+
+dkv-cli &gt; set.exists <span class="hljs-string">"k1"</span> <span class="hljs-string">"v2"</span>
+dkv-cli &gt; <span class="hljs-literal">true</span>
+
+dkv-cli &gt; set.exists <span class="hljs-string">"k1"</span> <span class="hljs-string">"v4"</span>
+dkv-cli &gt; <span class="hljs-literal">false</span>
+
+dkv-cli &gt; set.drop <span class="hljs-string">"k1"</span>
+dkv-cli &gt; ok
+</code></pre>
+<h2>4. Dict concept</h2>
+<pre><code class="language-bash">dkv-cli &gt; dict.put <span class="hljs-string">"dict1"</span> <span class="hljs-string">"k1"</span> <span class="hljs-string">"v1"</span> <span class="hljs-string">"k2"</span> <span class="hljs-string">"v2"</span>
+dkv-cli &gt; ok
+
+dkv-cli &gt; dict.get <span class="hljs-string">"dict1"</span>
+dkv-cli &gt; { <span class="hljs-string">"k1"</span> : <span class="hljs-string">"v1"</span>, <span class="hljs-string">"k2"</span> : <span class="hljs-string">"v2"</span>}
+
+dkv-cli &gt; dict.get <span class="hljs-string">"dict1"</span> <span class="hljs-string">"k1"</span>
+dkv-cli &gt; <span class="hljs-string">"v1"</span>
+
+dkv-cli &gt; dict.get <span class="hljs-string">"dict1"</span> <span class="hljs-string">"k1"</span>
+dkv-cli &gt; <span class="hljs-string">"v1"</span>
+
+dkv-cli &gt; dict.del <span class="hljs-string">"dict1"</span> <span class="hljs-string">"k1"</span>
+dkv-cli &gt; ok
+
+dkv-cli &gt; dict.pop <span class="hljs-string">"dict1"</span> <span class="hljs-string">"k2"</span>
+dkv-cli &gt; <span class="hljs-string">"v2"</span>
+
+dkv-cli &gt; dict.get <span class="hljs-string">"dict1"</span>
+dkv-cli &gt; []
+
+dkv-cli &gt; dict.drop <span class="hljs-string">"dict1"</span>
+dkv-cli &gt; ok
+</code></pre>
+<h2>5. SortedList Concept</h2>
+<pre><code class="language-bash">dkv-cli &gt; slist.put <span class="hljs-string">"slist1"</span> <span class="hljs-string">"m12"</span> 12 <span class="hljs-string">"m2"</span> 2 <span class="hljs-string">"m5"</span> 5
+dkv-cli &gt; ok
+
+dkv-cli &gt; slist.top <span class="hljs-string">"slist1"</span> 2
+dkv-cli &gt; [(<span class="hljs-string">"m12"</span>, 12), (<span class="hljs-string">"m5"</span>, 5)]
+
+dkv-cli &gt; slist.incrScore <span class="hljs-string">"slist1"</span> <span class="hljs-string">"m5"</span> 10
+dkv-cli &gt; ok
+
+dkv-cli &gt; slist.putMember <span class="hljs-string">"slist1"</span> <span class="hljs-string">"m9"</span> 13
+dkv-cli &gt; ok
+
+dkv-cli &gt; slist.removeMember <span class="hljs-string">"slist1"</span> <span class="hljs-string">"m9"</span>
+dkv-cli &gt; ok
+
+dkv-cli &gt; slist.top <span class="hljs-string">"slist1"</span> 2
+dkv-cli &gt; [(<span class="hljs-string">"m5"</span>, 15), (<span class="hljs-string">"m12"</span>, 12)]
+
+dkv-cli &gt; slist.getMember <span class="hljs-string">"slist1"</span> <span class="hljs-string">"m12"</span>
+dkv-cli &gt; (<span class="hljs-string">"m12"</span>, 12), 2nd
+
+dkv-cli &gt; slist.drop <span class="hljs-string">"slist1"</span>
+dkv-cli &gt; ok
+</code></pre>
+<h2>6. Table concept</h2>
+<ol>
+<li>Define your data structure in a schema file named <code>mytables.sc</code></li>
+</ol>
+<pre><code class="language-shell">table TaskTable {
+  [p]task_id: string;
+  [i]driver_id: string;
+  task_name: string;
+  return_num: int;
+  arguments: [string];
+}
+</code></pre>
+<pre><code class="language-shell">table DriverTable {
+ [p]driver_id: string;
+ driver_name: string;
+ actor_num: int;
+};
+</code></pre>
+<ol start="2">
+<li>Start an distkv server and execute this command to create table:</li>
+</ol>
+<pre><code class="language-shell"><span class="hljs-meta">&gt;</span><span class="bash"> dkv-cli -p 12344 <span class="hljs-comment"># connect to distkv server</span></span>
+<span class="hljs-meta">&gt;</span><span class="bash"> create TaskTable, DriverTable from mytables.sc</span>
+</code></pre>
+<ol start="3">
+<li>Add data to the table:</li>
+</ol>
+<pre><code class="language-shell"><span class="hljs-meta">&gt;</span><span class="bash"> TaskTable.add <span class="hljs-string">"00001"</span>, <span class="hljs-string">"22222"</span>, <span class="hljs-string">"my_task"</span>, 3, [<span class="hljs-string">"1"</span>, <span class="hljs-string">"2"</span>]</span>
+&lt; ok
+<span class="hljs-meta">&gt;</span><span class="bash"> TaskTable.add <span class="hljs-string">"00002"</span>, <span class="hljs-string">"99999"</span>, <span class="hljs-string">"my_task"</span>, 3, [<span class="hljs-string">"1"</span>, <span class="hljs-string">"2"</span>]</span>
+&lt; ok
+<span class="hljs-meta">&gt;</span><span class="bash"> TaskTable.add <span class="hljs-string">"00003"</span>, <span class="hljs-string">"22222"</span>, <span class="hljs-string">"my_task"</span>, 3, [<span class="hljs-string">"1"</span>, <span class="hljs-string">"2"</span>]</span>
+&lt; ok
+<span class="hljs-meta">&gt;</span><span class="bash"> DriverTable.add <span class="hljs-string">"22222"</span>, <span class="hljs-string">"my_driver"</span>, 10</span>
+&lt; ok
+</code></pre>
+<ol start="4">
+<li>Query all tasks by driver id:</li>
+</ol>
+<pre><code class="language-shell"><span class="hljs-meta">&gt;</span><span class="bash"> TaskTable.query (*) when driver_id == <span class="hljs-string">"22222"</span></span>
+&lt;
+&lt; task_id      driver_id     task_name      num_return      arguments
+&lt; "00001"      "22222"       "my_task"      3               ["1", "2"]
+&lt; "00003"      "22222"       "my_task"      3               ["1", "2"]
+&lt; 2 records
+</code></pre>
+</div></section><footer class="footer-container"><section class="comment"><div class="gt-container"><div class="gt-initing"><i class="gt-loader"></i><p class="gt-initing-text">Gitalking ...</p></div></div></section><div class="footer-body"><img src="/images/distkv-logo-gray.png"/><p class="docsite-power">website powered by docsite</p><div id="google_translate_element"></div><div class="cols-container"><div class="col col-4"><h3>Vision</h3><p></p></div><div class="col col-2"><dl><dt>Resources</dt><dd><a href="/en-us/blog/index.html" target="_self">Blog</a></dd><dd><a href="/en-us/community/index.html" target="_self">Community</a></dd></dl></div><div class="col col-4"><dl><dt>Documentation</dt><dd><a href="/en-us/docs/overview/what-is-distkv.html" target="_self">What is Distkv ?</a></dd><dd><a href="/en-us/docs/dev/quickstart.html" target="_self">Quick Start</a></dd><dd><a href="https://github.com/distkv-project/distkv.github.io/issues/new" target="_self">Report a doc issue</a></dd><dd><a href="https://github.com/distkv-project/distkv.github.io" target="_self">Edit This Page on GitHub</a></dd></dl></div><div class="col col-3"><h3>Statistics</h3><p><span id="busuanzi_container_page_pv">Total Visits to This Page: <span id="busuanzi_value_page_pv"></span></span></p><p><span id="busuanzi_container_site_pv">Total Visits to This Site: <span id="busuanzi_value_site_pv"></span></span></p><p><span id="busuanzi_container_site_uv">Total Guests to This Site: <span id="busuanzi_value_site_uv"></span></span></p></div></div><div class="copyright"><span>Copyright © 2020 Distkv</span></div></div></footer></div></div>
+  
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+  
+
+  <script>
+    window.rootPath = '';
+
+  </script>
+  <script src="/build/documentation.js"></script>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "filename": "developers_dev.md",
+  "__html": "<h2>Distkv Contributors</h2>\n<p>This page shows Seats developers and continues to expand. The list is not prioritized.</p>\n<h1>Distkv Main Team List</h1>\n<table>\n<thead>\n<tr>\n<th>Name</th>\n<th>Group</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://github.com/jovany-wang\">Qing Wang</a></td>\n<td></td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/senyer\">senyer</a></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n",
+  "link": "/en-us/docs/developers/developers_dev.html",
+  "meta": {
+    "title": "Contributors",
+    "keywords": "Distkv, Contributors",
+    "description": "Distkv Team."
+  }
+}

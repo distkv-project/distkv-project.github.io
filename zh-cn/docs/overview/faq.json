@@ -1,0 +1,10 @@
+{
+  "filename": "faq.md",
+  "__html": "<h1>FAQ</h1>\n<h2>Project operation-related questions</h2>\n<p><strong>Q: xxxx?</strong></p>\n<p>A: xxx</p>\n<hr>\n",
+  "link": "/zh-cn/docs/overview/faq.html",
+  "meta": {
+    "title": "Distkv FAQ",
+    "keywords": "Distkv",
+    "description": "Distkv FAQ."
+  }
+}
