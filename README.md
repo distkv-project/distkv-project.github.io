@@ -1,20 +1,20 @@
 # Distkv Community Official Website
 
 ![CI](https://github.com/distkv-project/distkv.github.io/workflows/CI/badge.svg)
-![distkv.github.io deploy](https://github.com/distkv-project/distkv.github.io/workflows/distkv.github.io%20deploy/badge.svg)
+![distkv-project.github.io deploy](https://github.com/distkv-project/distkv-project.github.io/workflows/distkv-project.github.io%20deploy/badge.svg)
 
 All website material  of https://distkv.com
 
 
 ## Prerequisite
 
-distkv.github.io is powered by [docsite](https://github.com/txd-team/docsite). Please read [https://docsite.js.org](https://docsite.js.org)
+distkv-project.github.io is powered by [docsite](https://github.com/txd-team/docsite). Please read [https://docsite.js.org](https://docsite.js.org)
 Please make sure your version of docsite is `docsite@wuhan2020`.
 Please also make sure your node version is higher than 8.x.
 
 ## Build instruction
 
-1. Run `npm i docsite@wuhan2020 -g ` to install docsite for project wuhan2020.
+1. Run `npm i docsite@wuhan2020 -g ` to install docsite for project distkv.
 2. Run `npm i` in the root directory to install the dependencies.
 3. Run `npm run start` in the root directory to start a local server, you will see the website in 'http://127.0.0.1:8080'.
 4. Run `npm run build` to build source code.
@@ -25,7 +25,7 @@ If you have higher version of node installed, you may consider `nvm` to allow di
 1. Follow the [instructions](http://nvm.sh) to install nvm
 2. Run `nvm install 10` to install node 10.x
 3. Run `nvm use 10` to switch the working environment to node 10.x
-4. Run `npm i docsite@wuhan2020 -g ` to install docsite for project wuhan2020.
+4. Run `npm i docsite@wuhan2020 -g ` to install docsite for project distkv.
 
 Make sure `npm` and `docsite` are configured in the environmet configuration of os . eg: /etc/profile or .bash_profile of Macos.
 
