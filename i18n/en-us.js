@@ -10,7 +10,7 @@ export default {
       title: 'Events & News',
       list: [
         {
-          img: '/images/distkv_logo.png',
+          img: '/images/distkv-logo.png',
           title: '',
           content: '',
           dateStr: '',
@@ -82,7 +82,7 @@ export default {
         title: 'Overview',
         children: [
           {
-            title: 'What is Wuahan2020?',
+            title: 'What is Distkv?',
             link: '/en-us/docs/overview/what-is-distkv.html',
           },
           {
@@ -110,7 +110,7 @@ export default {
   home: {
     brand: {
       brandName: 'What is the community of distkv ?',
-      briefIntroduction: 'What we are doing now is: to establish a real-time and synchronous data service for hospitals, factories, procurement and other information, and to convene all those who want to contribute to the anti-virus campaign, so that everyone with relevant skills can participate in the development of related topics, and complete it in a self-organized and collaborative way with open source community culture.',
+      briefIntroduction: '',
       buttons: [
         {
           text: 'Get Started',
@@ -121,12 +121,7 @@ export default {
           text: 'Github',
           link: 'https://github.com/distkv-project/distkv',
           type: 'normal',
-        },
-        {
-          text: 'Platform for Wuhan COVID-19 Epidemic Prevention',
-          link: 'https://wh.opensource-service.cn/',
-          type: 'normal',
-        },
+        }
       ],
     },
     features: {
@@ -135,66 +130,14 @@ export default {
         {
           icon: 'feature-1',
           title: 'COVID-19 Information Platform',
-          content: 'An information system developed by the community. Facilitate the information exchange between resource providers (medical resource donors, logistics companies, hotels, free clinic resources) and those who need help (hospitals, people in the disaster area), so as to facilitate and quickly help the people in the disaster area.',
+          content: '',
         },
         {
           icon: 'feature-2',
           title: 'Distkv Community',
-          content: 'At present, there are more than 3000 volunteers from different countries in Wuhan 2020 community. There are programmers, product managers, designers, project managers, data analysts, information collectors, translators, media workers, students, etc. Through the establishment of information system, data analysis and prediction, it makes contribution to the resistance of new coronavirus.',
+          content: '',
         }
       ],
-    },
-  },
-  project: {
-    barText: 'Projects',
-    sectionDescription: "The community has released the following open-sourced projects",
-    projects: {
-      list: [
-        {
-          img: '/images/blog/distkv.png',
-          title: 'Wuhan Novel Coronavirus Outbreak Prevention Information Collection Platform',
-          repoLink:'https://github.com/distkv-project/distkv',
-          description: "Distkv information service website is a comprehensive information service platform for connecting resources related to the epidemic created by programmers and developers. With the focus on the data platform as the core, it can solve the problems such as the shortage of supplies, the confusion of medical information and the inability of people in different places to solve the problems caused by uneven information and opaque information under extreme emergency conditions. Mainly for the government, public welfare organizations, enterprises and institutions, medical institutions, patients, donors and other relevant institutions and groups. With the help of technical tools and digital platforms, developers can make use of the advantages of digital platforms to realize the digitalization of supply and demand, improve information transparency, and enable the supply and demand parties to conduct distributed self-service docking to improve efficiency. Many developers involved in distkv are doing what they can with their own technologies to cope with this war.",
-          link: 'https://wh.opensource-service.cn/',
-        },
-        {
-          img: '/images/blog/distkv.png',
-          title: '2020 Wuhan Rescue',
-          repoLink: 'https://github.com/distkv/data-sync',
-          description: 'Our goal is to establish a real-time data service platform with information on hospitals, factories and procurement, allowing anyone with relevant skills to participate in the initiative. We would like to call for anyone who wishes to contribute to the fight against the COVID-19.',
-          link: 'https://distkv.kaiyuanshe.cn/',
-        },
-        {
-          img: '/images/blog/distkv.png',
-          title: 'Distkv Open Source Community Official Website',
-          repoLink: 'https://github.com/distkv-project/distkv.github.io',
-          description: 'Distkv open source community is a community independently built by developers during the outbreak of COVID-19. The community provides a platform for technical exchange and practice for developers. The community culture of open source is completed in a way of self-organization and collaboration, helping wuhan to carry out self-organization rescue work more effectively and accurately. Since its launch, the community has attracted more than 3,000 volunteers from different countries and made contributions to the resistance against the new coronavirus through the establishment of information system, data analysis and prediction. So far, several projects have been successfully incubated, including "new coronavirus epidemic prevention information collection platform", "2020 assistance to wuhan", "Distkv open source community website", and "covid-19-nav epidemic information navigation".',
-          link: 'https://community.distkv.org.cn/',
-        },
-        {
-          img: '/images/blog/distkv.png',
-          title: 'COVID-19 Outbreak Navigation Site',
-          repoLink: 'https://github.com/distkv/COVID-19-Nav',
-          description: 'COVID-19 navigation site provides the public with a convenient and comprehensive information portal with online resources and archival information related to COVID-19.',
-          link: 'http://nav.werty.cn',
-        },
-      ],
-    },
-  },
-  job: {
-    barText: 'Recruitment',
-    sectionDescription: 'Recruitment information release specifications',
-    purpose: {
-      title: "The original intention of the recruitment module",
-      desc: "This community was established when the New Coronary Pneumonia raged. In the process of establishing sites and organizing community activities, many volunteers showed strong professional abilities and professional qualities. We found that many companies want to send recruitment information in the community without a suitable place. At the same time, many college students and volunteers are actively contributing to the community. The \"recruitment\" module came into being."
-    },
-    volunteers: {
-      title: "Community composition",
-      desc: "We are a community initiated by a crisis, and the community members are relatively complex. Among them: 75% technology, including: front-end and back-end development, employees in various positions such as big data, ai, operation and maintenance, DBA; 5% translators; 5% product managers; 2.5% coordination and management; Control and legal affairs; 5% publicity; 5% information entry; 1.5% others."
-    },
-    method: {
-      title: "Release method",
-      desc: "The employer directly publishes the job information in the comment area under the comment article, and the applicant can comment on the reply. For illegal or false information, the community administrator will delete posts and reserve the right to appeal to the publisher."
     },
   },
   site: {

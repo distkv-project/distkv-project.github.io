@@ -10,7 +10,7 @@ export default {
       title: '事件 & 新闻',
         list: [
           {
-            img: '/images/distkv_logo.png',
+            img: '/images/distkv-logo.png',
             title: '',
             content: '',
             dateStr: '',
