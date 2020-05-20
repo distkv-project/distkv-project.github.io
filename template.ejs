@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="keywords" content="<%= keywords %>" />
+  <meta name="description" content="<%= description %>" />
+  <meta name="baidu-site-verification" content="" />
+  <meta name="google-site-verification" content="" />
+
+  <!-- 网页标签标题 -->
+  <title><%= title %></title>
+  <link rel="shortcut icon" href="/images/distkv_logo.png" />
+  <link rel="stylesheet" href="<%= rootPath %>/build/<%= page %>.css" />
+</head>
+
+<body>
+  <div id="root"><%- __html %></div>
+  <% if (env === 'prod') { %>
+    <script src="/lib/react.production.min.js"></script>
+    <script src="/lib/react-dom.production.min.js"></script>
+  <% } else { %>
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+  <% } %>
+
+  <script>
+    window.rootPath = '<%= rootPath %>';
+
+  </script>
+  <script src="<%= rootPath %>/build/<%= page %>.js"></script>
+
+  <% if (env === 'prod') { %>
+  <script type="text/javascript" src="https://translate.google.cn/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?eeeeeeeeeeee";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({}, 'google_translate_element');
+    }
+  </script>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <% } %>
+</body>
+
+</html>
