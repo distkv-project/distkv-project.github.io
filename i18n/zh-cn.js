@@ -204,7 +204,8 @@ export default {
         },
       ],
     },
-    copyright: 'Copyright © 2020 Distkv',
+    
+    right: 'Copyright © 2020 Distkv 京ICP备18017962号-2',
 
     statistics: {
       title: '访问统计',
