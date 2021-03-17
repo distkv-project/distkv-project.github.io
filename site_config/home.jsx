@@ -8,7 +8,7 @@ export default {
       buttons: [
         {
           text: 'Quick Start',
-          link: '/en-us/docs/demo1.html',
+          link: 'http://distkv.online',
           type: 'primary',
         },
         {
@@ -77,7 +77,7 @@ export default {
       buttons: [
         {
           text: 'Quick Start',
-          link: '/en-us/docs/demo1.html',
+          link: 'http://distkv.online',
           type: 'primary',
         },
         {
