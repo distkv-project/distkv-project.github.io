@@ -1,0 +1,35 @@
+pages:
+  # key is the dirname of pages in src/pages
+  home:
+    # 首页配置
+    zh-cn:
+      title: 'Distkv'
+      keywords: '官网,首页'
+      description: 'Wuhan2020官网'
+    # home config
+    en-us:
+      title: 'Distkv'
+      keywords: 'Official,Distkv'
+      description: 'Distkv Official Website'
+  community:
+    # 社区页配置
+    zh-cn:
+      title: '社区'
+      keywords: 'Distkv,社区'
+      description: 'Wuhan2020社区'
+    # community page config
+    en-us:
+      title: 'Community'
+      keywords: 'Seata,Community'
+      description: 'Seata Community'
+  blog:
+    # 博客列表页配置
+    zh-cn:
+      title: '博客'
+      keywords: 'Distkv,博客'
+      description: 'Distkv 博客'
+    # blog list page config
+    en-us:
+      title: 'Blog'
+      keywords: 'Distkv,Blog'
+      description: 'Distkv Blog'
