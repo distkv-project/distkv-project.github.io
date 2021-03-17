@@ -59,7 +59,7 @@ export default {
       img: '/img/quick_start.png',
       button: {
         text: 'READ MORE',
-        link: '/en-us/docs/demo1.html',
+        link: '/en-us/docs/index.html',
       },
     },
     users: {
@@ -128,7 +128,7 @@ export default {
       img: '/img/quick_start.png',
       button: {
         text: 'READ MORE',
-        link: '/en-us/docs/demo1.html',
+        link: '/en-us/docs/index.html',
       },
     },
     users: {
