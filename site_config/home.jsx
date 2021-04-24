@@ -8,7 +8,7 @@ export default {
       buttons: [
         {
           text: 'Quick Start',
-          link: 'http://distkv.online',
+          link: 'http://distkv.kairbon.xyz/',
           type: 'primary',
         },
         {
@@ -77,7 +77,7 @@ export default {
       buttons: [
         {
           text: 'Quick Start',
-          link: 'http://distkv.online',
+          link: 'http://distkv.kairbon.xyz/',
           type: 'primary',
         },
         {
